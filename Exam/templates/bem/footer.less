@@ -1,0 +1,39 @@
+.footer {
+	
+	height: 525px;
+	background: linear-gradient( to bottom left, @colorRight, @colorLeft);
+	position: relative;
+	z-index: 1;
+	font-family: @fontFamGotBook;
+	color: white;
+	font-size: 14px;
+	z-index: 0;
+	// margin-top: -150px;
+
+	&::before {
+		content: url(../img/bg_footer.png);
+		position: absolute;
+		opacity: 0.1;
+		z-index: -1;
+		width: 100%;
+		overflow: hidden;
+	}
+
+	&_container {
+		position: absolute;
+		top: 210px;
+		width: 770px;
+		right: 0;
+		left: 0;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&_copyrighting {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		margin-top: 25px;
+	}
+}

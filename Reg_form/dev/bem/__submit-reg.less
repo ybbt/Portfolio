@@ -1,0 +1,52 @@
+.submit-reg {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: @colorSubmit;
+	width: 100%;
+	height: 100%;
+
+	&_button {
+		width: 320px;
+		height: 40px;
+		border: none;
+		border-radius: 2px;
+		background: @colorText;
+		font-size: 14px;
+		text-transform: uppercase;
+		color: white;
+		margin-top: 40PX;
+		overflow: hidden;
+		position: relative;
+
+		&:after {
+			content: '';
+			position: absolute;
+			top: -200%;
+			right: -50%;
+			bottom: -200%;
+			left: -50%;
+			background: linear-gradient(to bottom, rgba(229, 172, 142, 0), rgba(255,255,255,0.5) 50%, rgba(229, 172, 142, 0));
+			transform: rotateZ(60deg) translate(0, 110%);
+			
+		}
+
+		&:hover:after, &:focus:after { 
+			animation: button-sheen 1.5s forwards; 
+		}
+	}
+
+	&_agrees {
+		text-align: center;
+		width: 320px;
+		margin-top: 20PX;
+		font-size: 12px;
+		color: @colorAgree;
+	}
+}
+
+@keyframes button-sheen {
+	100% {
+		transform: rotateZ(60deg) translate(0, -300%);
+	}
+}

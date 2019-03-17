@@ -1,0 +1,23 @@
+mixin project(projectData)
+	each item in projectData
+		if item.isLeft
+			.project.project__left
+				img.project_img.project_img__left(src= item.src, alt="")
+				main.project_content.project_content__left
+					h1.title.title__black.title__left
+						span.title__plaintitle= item.plaintitle
+						= item.title
+					p.project_text= item.text
+					button.button.button__project more details
+					.project_name= item.name
+		else
+			.project.project__right
+				main.project_content.project_content__right
+					h1.title.title__black.title__left
+						span.title__plaintitle= item.plaintitle
+						= item.title
+					p.project_text= item.text
+					button.button.button__project more details
+					.project_name= item.name
+				img.project_img.project_img__right(src= item.src, alt="")
+				

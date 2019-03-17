@@ -1,0 +1,45 @@
+.header-reg,
+.header-reg_title {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.header-reg {
+	position: relative;
+	flex-direction: column;
+	width: 320px;
+	height: 160px;
+	box-sizing: border-box;
+
+	&_title {
+		min-height: 21px;
+		height: 21px;
+		flex-direction: column;
+		color: @colorTitle;
+		font-size: 24px;
+		text-transform: uppercase;
+		margin: 0 0 20px 0;
+	}
+
+	&:before {
+			position: absolute;
+			top: 40px;
+			content: "";
+			width: 7px;
+			height: 7px;
+			border-radius: 4px;
+			background: @colorAdd;
+			box-shadow: 0px 0px 0 6px white;
+		}
+
+	&:after {
+		content: "";
+		width: 100%;
+		min-height: 1px;
+		height: 1px;
+		background: linear-gradient(to right, transparent 5%, @colorAdd 40%, @colorAdd 60%, transparent 95%);
+	}
+
+	
+}

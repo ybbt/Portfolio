@@ -1,0 +1,55 @@
+.project {
+	display: flex;
+	width: 100%;
+
+	&__right {
+		margin-bottom: 170px; 
+	}
+
+	&__left {
+		margin-bottom: 210px;
+	}
+
+	&_img {
+
+		&__right {
+			box-shadow: @dx -@dy 0 0 @colorRight; 
+		}
+
+		&__left {
+			box-shadow: -@dx -@dy 0 0 @colorLeft; 
+		}
+	}
+
+	&_content {
+		padding-top: 55px;
+
+		&__left {			
+			padding-left: 70px;
+		}
+
+		&__right {
+			padding-right: 70px;
+		}
+	}
+
+	&_title {
+
+	}
+
+	&_text {
+		font-family: @fontFamOpenSans;
+		font-size: 18px;
+		line-height: 30px;
+		color: #4b5562;
+		margin-top: 20px;
+		margin-bottom: 35px;
+	}
+
+	&_name {
+		font-family: @fontFamOpenSans;
+		font-style: italic;
+		font-size: 18px;
+		margin-top: 50px;
+	}
+}

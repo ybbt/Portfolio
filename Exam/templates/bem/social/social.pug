@@ -1,0 +1,5 @@
+mixin social(socialData)
+	.social
+		each item in socialData
+			a(href= item.href)
+				i(class="fab" class=item.className)

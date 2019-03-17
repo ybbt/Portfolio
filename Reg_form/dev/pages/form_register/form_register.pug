@@ -1,0 +1,67 @@
+include ../../bem/row-reg/__row-reg.pug
+
+include ../../general/svg/__iconGenderSvg.pug
+include ../../general/svg/__iconQuestion.pug
+include ../../general/svg/__iconLocationSvg.pug
+
+doctype html
+html(lang='en')
+	head
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		meta(charset='UTF-8')
+		title Registration Form
+		link(rel="icon" type="image/png" href="favicon.png" sizes="16x16")
+		link(rel="shortcut icon" type="image/x-icon" href="favicon.ico")
+		
+			
+		link(rel= "stylesheet" href="css/normalize.css")
+		link(rel= "stylesheet" href="css/index.css")
+
+		link(href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet")
+
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js")
+		
+	body
+		.form-reg
+			header.header-reg
+				h1.header-reg_title Sign up for FREE!
+			main.main-reg
+				form.main-reg_form._formReg#reg
+					.main-reg_row-reg
+						.row-reg
+							span.row-reg_title I am
+							.row-reg_icons._move
+								label.row-reg_icon.row-reg_icon__male._forBackMove
+									input.row-reg_icon-radio(type="radio" value="male" name="gender" checked='' form='reg')
+									+iconGender("male")
+									
+								label.row-reg_icon.row-reg_icon__female._forMove
+									input.row-reg_icon-radio(type="radio" value="female" name="gender" form='reg')
+									+iconGender("female")
+									
+					.main-reg_row-reg
+						+rowReg("Year of birth", false, "", "yearBirth","_inputValid", "Year")
+					.main-reg_row-reg
+						+rowReg("Email", true, "email", "email", "_inputValid", "Email")
+					.main-reg_row-reg
+						+rowReg("Password", true, "password", "password", "_inputValid", "Pass")
+					.main-reg_row-reg
+						+rowReg("Postal code", true, "text", "postcode", "_inputValid", "PostCode")
+					.main-reg_location-row
+						.main-reg_location
+							+iconLocation
+							
+							span.main-reg_position E.g. Berlin or 10432
+						+iconQuestion
+						
+						.main-reg_tooltip._rowTooltip
+							+tooltipReg("We don’t use postal codes to cantact members directly", jsClassId, "question")
+			.submit-reg
+				button.submit-reg_button._submitReg(type="submit" value="") register now!
+				.submit-reg_agrees
+					| By clicking the button above you agree to our 
+					a.submit-reg_link(href="#") Terms of Use 
+					| and 
+					a.submit-reg_link(href="#") Privacy Policy 
+					| including use of cookies.
+	script(src="js/index.js")

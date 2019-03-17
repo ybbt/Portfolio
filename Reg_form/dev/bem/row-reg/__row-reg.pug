@@ -1,0 +1,13 @@
+include ../../bem/tooltip-reg/__tooltip-reg.pug
+
+mixin rowReg(rowTitle, inputFlag, inputType, inputName, jsClass, jsClassId)
+	.row-reg
+		div.row-reg_title= rowTitle
+		if (inputFlag== true)
+			input.row-reg_input(name=inputName, type=inputType, class=jsClass, class="_input"+jsClassId)
+		else
+			select.row-reg_input(name=inputName, class=jsClass, class="_input"+jsClassId)
+				//- - for (var i = 1950; i<=2020; i++)
+				//- 	option(value=i)= i
+		.row-reg_tooltip._rowTooltip
+			+tooltipReg("", jsClassId)

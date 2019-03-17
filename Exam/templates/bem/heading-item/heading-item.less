@@ -1,0 +1,51 @@
+.heading-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	z-index: 1;
+	height: 100%;
+
+	//remove this
+	// &::before {
+	// 	content: url(../img/bg_item_1.jpg);
+	// 	position: absolute;
+	// 	z-index: -1;
+	// 	height: 100%;
+	// 	opacity: 0.06;
+	// };
+
+	
+	&_img {
+		position: absolute;
+		z-index: -1;
+		height: 100%;
+		opacity: 0.06;
+	}
+
+	&_text {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&_title, &_subtitle {
+		
+		text-transform: uppercase;
+		color: white;
+	}
+
+	&_title {
+		font-family: 'gothambold1';
+		font-size: 80px;
+		margin-bottom: 30px;
+	}
+
+	&_subtitle {
+		font-family: 'GothamBook';
+		font-size: 18px;
+	}
+}
+

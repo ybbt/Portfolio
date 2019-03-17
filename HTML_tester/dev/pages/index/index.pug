@@ -1,0 +1,326 @@
+-
+	var
+		text = [
+			[
+				{
+					indentFlag: false,
+					textItem: "Bootstrap uses Autoprefixer to deal with CSS vendor prefixes. If you're compiling Bootstrap from its Less/Sass source and not using our Gruntfile, you'll need to integrate Autoprefixer into your build process yourself. If you're using precompiled Bootstrap or using our Gruntfile, you don't need to worry about this because Autoprefixer is already integrated into our Gruntfile.",
+				},
+			],
+			[
+				{
+					indentFlag: false,
+					textItem: "Bootstrap uses Autoprefixer to deal with CSS vendor prefixes. Bootstrap uses Autoprefixer to deal with CSS vendor prefixes.",
+				},
+			],
+			[
+				{
+					indentFlag: false,
+					textItem: "Bootstrap uses Autoprefixer to deal with CSS vendor prefixes. ",
+				},
+			],
+			[
+				{
+					indentFlag: false,
+					textItem: "Bootstrap is downloadable in two forms, within which you'll find the following directories and files, logically grouping common resources and providing both compiled and minified variations.",
+				},
+				{
+					indentFlag: true,
+					textItem: "— Bootstrap uses Autoprefixer to deal with CSS vendor prefixes. ",
+				},
+				{
+					indentFlag: true,
+					textItem: "— Bootstrap uses Autoprefixer to deal with CSS vendor prefixes. ",
+				},
+			],
+			[
+				{
+					indentFlag: false,
+					textItem: "Bootstrap is downloadable in two forms, within which you'll find the following directories and files, logically grouping common resources and providing both compiled and minified variations.",
+				},
+			],
+			[
+				{
+					indentFlag: true,
+					textItem: "— Bootstrap uses Autoprefixer to deal with CSS vendor prefixes.",
+				},
+				{
+					indentFlag: true,
+					textItem: "— Bootstrap uses Autoprefixer to deal.",
+				},
+			],
+			[
+				{
+					indentFlag: false,
+					textItem: "Bootstrap uses Autoprefixer to deal with CSS vendor prefixes.",
+				},
+			],
+			[
+				{
+					indentFlag: true,
+					textItem: "— Bootstrap uses Autoprefixer to deal with CSS vendor prefixes.",
+				},				
+			],
+			[
+				{
+					indentFlag: false,
+					textItem: "Bootstrap uses Autoprefixer to deal with CSS vendor prefixes.",
+				},
+			],
+			[
+				{
+					indentFlag: false,
+					textItem: "Bootstrap is downloadable in two forms, within which you'll find the following directories and files, logically grouping common resources and providing both compiled and minified variations.",
+				},
+				{
+					indentFlag: true,
+					textItem: "— Bootstrap uses Autoprefixer to deal with CSS vendor prefixes. ",
+				},
+				{
+					indentFlag: true,
+					textItem: "— Bootstrap uses Autoprefixer to deal with CSS vendor prefixes. ",
+				},
+			],
+			[
+				{
+					indentFlag: false,
+					textItem: "Bootstrap is downloadable in two forms, within which you'll find the following directories and files, logically grouping common resources and providing both compiled and minified variations.",
+				},
+			],
+			[
+				{
+					indentFlag: false,
+					textItem: "Bootstrap is downloadable in two forms, within which you'll find the following directories and files, logically grouping common resources and providing both compiled and minified variations.",
+				},
+			],
+		]
+
+
+
+mixin contentItem (title, contentItem, link, gFlag)
+	div.content_text
+		if (title.titleFlag)
+			h1.content_title= title.text
+		each objItem in contentItem
+			p.content_paragraph(class = objItem.indentFlag ? "content_paragraph__indent" : "", class = gFlag ? "content_paragraph__right" : "")= objItem.textItem
+	if (link.linkFlag)
+		a(href=link.url).content_link= link.text
+
+
+mixin content(gFlag, contents, borderFlag)
+	div.content(class = gFlag ? "content__gorizontal" : "content__vertical", class = borderFlag ? "content__bordernone" : "")
+		div.content_text-container(class = gFlag ? "content_text-container__gorizontal" : "content_text-container__vertical")
+			if (gFlag)
+				div.content_col.content_col__left
+					+contentItem(contents.title, contents.textFirst, {linkFlag: false})
+				div.content_col.content_col__right
+					+contentItem("", contents.textSecond, contents.link, gFlag)
+			else
+				div.content_col
+					+contentItem(contents.title, contents.textFirst, contents.link)
+					
+			
+
+
+doctype html
+html(lang='en')
+	head
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		meta(charset='UTF-8')
+		title HTML tester
+		link(rel="icon" type="image/png" href="favicon.png" sizes="16x16")
+		link(rel="shortcut icon" type="image/x-icon" href="favicon.ico")
+		
+			
+		link(rel= "stylesheet" href="css/normalize.css")
+		link(rel= "stylesheet" href="css/index.css")
+
+		link(rel= "stylesheet" href="libs/slick-1.8.1/slick/slick.css")
+		link(rel= "stylesheet" href="libs/slick-1.8.1/slick/slick-theme.css")
+
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js")
+	body
+		header.header
+			div.logo htmltester
+			div.menu
+				a.menu_item(href="#") company
+				a.menu_item.menu_item__selected(href="#") games
+				a.menu_item(href="#") team
+				a.menu_item(href="#") contacts
+		main.main
+			div.show#showSlider
+				div.show_overlay#overlaySlider
+					div.show_main
+						a(href="#" class="arrow arrow__prev-up _prevArrow")
+							picture
+								source(srcset="img/prev.webp" type="image/webp")
+								img(src="img/prev.png" alt="")
+						a(href="#" class="arrow arrow__next-up _nextArrow")
+							picture
+								source(srcset="img/next.webp" type="image/webp")
+								img(src="img/next.png" alt="")
+						
+						div.slider._sliderFor
+							div.slider_item
+								h1.main_slider-title chapter 1
+								p.
+									Bootstrap uses Autoprefixer to deal with CSS vendor prefixes. If you're compiling Bootstrap from its Less/Sass source and not using our Gruntfile, you'll need to integrate Autoprefixer into your build process yourself. If you're using precompiled Bootstrap or using our Gruntfile, you don't need to worry about this because Autoprefixer is already integrated into our Gruntfile.
+							div.slider_item
+								h1.main_slider-title chapter 2
+								p.
+									Bootstrap is downloadable in two forms, within which you'll find the following directories and files, logically grouping common relsources and providing both compiled and minified variations.
+								p — Bootstrap uses Autoprefixer to deal with CSS vendor prefixes.
+								p — Bootstrap uses Autoprefixer to deal with CSS vendor prefixes.
+							div.slider_item
+								h1.main_slider-title chapter 3
+								p Bootstrap uses Autoprefixer to deal with CSS vendor prefixes. Bootstrap uses Autoprefixer to deal with CSS vendor prefixes.
+								p Bootstrap uses Autoprefixer to deal with CSS vendor prefixes.
+			div.main_container.main_container__w-double.main_container__gr-green
+				div.main_cell.main_cell__w_double.main_cell__gr-green
+					
+					a(href="#" class="arrow arrow__prev _prevArrow")
+						picture
+							source(srcset="img/prev.webp" type="image/webp")
+							img(src="img/prev.png" alt="")
+					a(href="#" class="arrow arrow__next _nextArrow")
+						picture
+							source(srcset="img/next.webp" type="image/webp")
+							img(src="img/next.png" alt="")
+					div.slider._sliderNav
+						
+						div.slider_item._clickToPopup
+							h1.main_slider-title chapter 1
+							p.
+								Bootstrap uses Autoprefixer to deal with CSS vendor prefixes. If you're compiling Bootstrap from its Less/Sass source and not using our Gruntfile, you'll need to integrate Autoprefixer into your build process yourself. If you're using precompiled Bootstrap or using our Gruntfile, you don't need to worry about this because Autoprefixer is already integrated into our Gruntfile.
+						
+						div.slider_item._clickToPopup
+							h1.main_slider-title chapter 2
+							p.
+								Bootstrap is downloadable in two forms, within which you'll find the following directories and files, logically grouping common relsources and providing both compiled and minified variations.
+							p — Bootstrap uses Autoprefixer to deal with CSS vendor prefixes.
+							p — Bootstrap uses Autoprefixer to deal with CSS vendor prefixes.
+
+						div.slider_item._clickToPopup
+							h1.main_slider-title chapter 3
+							p Bootstrap uses Autoprefixer to deal with CSS vendor prefixes. Bootstrap uses Autoprefixer to deal with CSS vendor prefixes.
+							p Bootstrap uses Autoprefixer to deal with CSS vendor prefixes.
+
+			div.main_container.main_container__w-double
+				div.main_container
+					div.main_cell.main_cell__gr-blue
+					div.content-visual
+						picture.content-visual_img
+							source(srcset="img/heart.webp" type="image/webp")
+							img(src="img/heart.png" alt="")
+				div.main_container
+					div.main_cell.main_cell__gr-red
+					div.content-visual  
+						picture.content-visual_img
+							source(srcset="img/gear.webp" type="image/webp")
+							img(src="img/gear.png" alt="")
+			div.main_container.main_container__w-quadr
+				div.main_container.main_container__h-double
+					div.main_cell.main_cell__h_double 
+					+content(false, {title: {titleFlag: true, text: 'chapter 1'}, textFirst: text[0], textSecond: '', link: {linkFlag: true, url: "#", text: 'www.chapter1.ru'}})
+				div.main_container.main_container__double
+					div.main_container.main_container__w-double
+						
+						picture.main_img
+							source(srcset="img/games.webp" type="image/webp")
+							img(src="img/games.png" alt="")
+						
+					div.main_container.main_container__w-double.main_container__grred-main
+						+content(true, {title: {titleFlag: true, text: 'chapter 3'}, textFirst: text[1], textSecond: text[2], link: {linkFlag: true, url: "#", text: 'www.chapter3.ru'}})
+				div.main_container.main_container__h-double
+					div.main_cell.main_cell__h_double
+					+content(false, {title: {titleFlag: true, text: 'chapter 2'}, textFirst: text[3], textSecond: "", link: {linkFlag: true, url: "#", text: 'www.chapter2.ru'}})
+			div.main_container.main_container__quadr
+				div.main_container.main_container__double
+					div.main_container.main_container__w-double
+						picture.main_img
+							source(srcset="img/games_2.webp" type="image/webp")
+							img(src="img/games_2.png" alt="")
+						
+					div.main_container.main_container__w-double.main_container__grbrown-main
+						+content(true, {title: {titleFlag: true, text: 'chapter 4'}, textFirst: text[4], textSecond: text[5], link: {linkFlag: true, url: "#", text: 'www.chapter4.ru'}})
+				div.main_container.main_container__double.main_container__three
+					div.main_container.main_container__w-double
+						picture.main_img
+							source(srcset="img/games_4.webp" type="image/webp")
+							img(src="img/games_4.png" alt="")
+						
+					div.main_container.main_container__w-double.main_container__grgrey-main
+						+content(true, {title: {titleFlag: true, text: 'chapter 7'}, textFirst: text[6], textSecond: text[7], link: {linkFlag: true, url: "#", text: 'www.chapter7.ru'}})
+				
+				div.main_container.main_container__w-double.main_container__adapt-none
+				div.main_container.main_container__w-double.main_container__grbrown-main-rev
+					div.main_container
+						div.content-visual
+							p.content-visual_paragraph.content-visual_paragraph__up HTML
+							p.content-visual_paragraph.content-visual_paragraph__down TESTER
+					div.main_container
+						div.content-visual
+							picture.content-visual_img
+								source(srcset="img/star.webp" type="image/webp")
+								img(src="img/star.png" alt="")
+				div.main_container.main_container__double
+					div.main_container.main_container__h-double
+						div.main_cell
+						picture.main_img
+							source(srcset="img/games_5.webp" type="image/webp")
+							img(src="img/games_5.png" alt="")
+						div.main_container
+							div.main_cell
+							+content(false, {title: {titleFlag: true, text: 'chapter 5'}, textFirst: text[8], textSecond: '', link: {linkFlag: true, url: "#", text: 'www.chapter5.ru'}})
+					div.main_container.main_container__h-double
+						div.main_cell.main_cell__h_double
+						+content(false, {title: {titleFlag: true, text: 'chapter 6'}, textFirst: text[9], textSecond: '', link: {linkFlag: true, url: "#", text: 'www.chapter6.ru'}})
+				div.main_container.main_container__double.main_container__three
+					div.show#showVideo
+						div.show_overlay#overlayVideo
+							div.show_main.show_main__video
+								video(width="400" height="300" controls="controls" poster="img/games_6.png")
+									source(src="video/k8h1z.mp4")
+					div.main_cell
+						picture.main_img#clickToPopupVideo
+							source(srcset="img/games_6.webp" type="image/webp")
+							img(src="img/games_6.png" alt="")
+						div.content-visual
+							picture.content-visual_img
+								source(srcset="img/play.webp" type="image/webp")
+								img(src="img/play.png" alt="")
+					div.main_container
+						div.main_cell
+						+content(false, {title: '', textFirst: text[10], textSecond: '', link: {linkFlag: true, url: "#", text: 'www.chapter8.ru'}})
+					div.main_container.main_container__w-double.main_container__grdirtygrey-main
+						div.main_container
+							+content(false, {title: {titleFlag: true, text: 'chapter 8'}, textFirst: text[11], textSecond: '', link: {linkFlag: false, url: "", text: ''}}, true)
+						div.main_container
+							div.content-visual
+								div.content-visual_img-container
+									a(href="#")
+										picture.content-visual_img
+											source(srcset="img/social_1.webp" type="image/webp")
+											img(src="img/social_1.png" alt="")
+									a(href="#")
+										picture.content-visual_img
+											source(srcset="img/social_2.webp" type="image/webp")
+											img(src="img/social_2.png" alt="")
+									a(href="#")
+										picture.content-visual_img
+											source(srcset="img/social_3.webp" type="image/webp")
+											img(src="img/social_3.png" alt="")
+									a(href="#")
+										picture.content-visual_img
+											source(srcset="img/social_4.webp" type="image/webp")
+											img(src="img/social_4.png" alt="")
+		footer.footer
+			div.footer_right Copyright © HTMLTESTER. 2009-2016. All right reserved.
+
+		script(src="libs/slick-1.8.1/slick/slick.min.js")
+
+		script(src="js/index.js")
+
+		
+
+		

@@ -1,0 +1,50 @@
+F:\ШАГ\Домашние Задания\EXAM_GDI+\My_(analog)_Paint\My_(analog)_Paint\bin\Debug\My_(analog)_Paint.exe
+F:\ШАГ\Домашние Задания\EXAM_GDI+\My_(analog)_Paint\My_(analog)_Paint\bin\Debug\My_(analog)_Paint.pdb
+F:\ШАГ\Домашние Задания\EXAM_GDI+\My_(analog)_Paint\My_(analog)_Paint\obj\x86\Debug\My__analog__Paint.Properties.Resources.resources
+F:\ШАГ\Домашние Задания\EXAM_GDI+\My_(analog)_Paint\My_(analog)_Paint\obj\x86\Debug\My_(analog)_Paint.csproj.GenerateResource.Cache
+F:\ШАГ\Домашние Задания\EXAM_GDI+\My_(analog)_Paint\My_(analog)_Paint\obj\x86\Debug\My_(analog)_Paint.exe
+F:\ШАГ\Домашние Задания\EXAM_GDI+\My_(analog)_Paint\My_(analog)_Paint\obj\x86\Debug\My_(analog)_Paint.pdb
+F:\ШАГ\Домашние Задания\EXAM_GDI+\My_(analog)_Paint\My_(analog)_Paint\obj\x86\Debug\My_(analog)_Paint.csprojResolveAssemblyReference.cache
+F:\ШАГ\Домашние Задания\EXAM_GDI+\My_(analog)_Paint\My_(analog)_Paint\obj\x86\Debug\My__analog__Paint.Form1.resources
+H:\STEP\DZ\EXAM_GDI+\EXAM_GDI+\My_(analog)_Paint\My_(analog)_Paint\obj\x86\Debug\My_(analog)_Paint.exe
+H:\STEP\DZ\EXAM_GDI+\EXAM_GDI+\My_(analog)_Paint\My_(analog)_Paint\obj\x86\Debug\My_(analog)_Paint.pdb
+H:\STEP\DZ\EXAM_GDI+\EXAM_GDI+\My_(analog)_Paint\My_(analog)_Paint\bin\Debug\My_(analog)_Paint.exe
+H:\STEP\DZ\EXAM_GDI+\EXAM_GDI+\My_(analog)_Paint\My_(analog)_Paint\bin\Debug\My_(analog)_Paint.pdb
+H:\STEP\DZ\EXAM_GDI+\EXAM_GDI+\My_(analog)_Paint\My_(analog)_Paint\obj\x86\Debug\ResolveAssemblyReference.cache
+H:\STEP\DZ\EXAM_GDI+\EXAM_GDI+\My_(analog)_Paint\My_(analog)_Paint\obj\x86\Debug\My__analog__Paint.Form1.resources
+H:\STEP\DZ\EXAM_GDI+\EXAM_GDI+\My_(analog)_Paint\My_(analog)_Paint\obj\x86\Debug\My__analog__Paint.Properties.Resources.resources
+H:\STEP\DZ\EXAM_GDI+\EXAM_GDI+\My_(analog)_Paint\My_(analog)_Paint\obj\x86\Debug\GenerateResource.read.1.tlog
+H:\STEP\DZ\EXAM_GDI+\EXAM_GDI+\My_(analog)_Paint\My_(analog)_Paint\obj\x86\Debug\GenerateResource.write.1.tlog
+H:\STEP\DZ\EXAM_GDI+\EXAM_GDI+\My_(analog)_Paint\My_(analog)_Paint\obj\x86\Debug\GenerateResource.write.417.tlog
+F:\STEP\DZ\EXAM_GDI+\EXAM_GDI+\My_(analog)_Paint\My_(analog)_Paint\obj\x86\Debug\My_(analog)_Paint.exe
+F:\STEP\DZ\EXAM_GDI+\EXAM_GDI+\My_(analog)_Paint\My_(analog)_Paint\obj\x86\Debug\My_(analog)_Paint.pdb
+F:\STEP\DZ\EXAM_GDI+\EXAM_GDI+\My_(analog)_Paint\My_(analog)_Paint\bin\Debug\My_(analog)_Paint.exe
+F:\STEP\DZ\EXAM_GDI+\EXAM_GDI+\My_(analog)_Paint\My_(analog)_Paint\bin\Debug\My_(analog)_Paint.pdb
+F:\STEP\DZ\EXAM_GDI+\EXAM_GDI+\My_(analog)_Paint\My_(analog)_Paint\obj\x86\Debug\My_(analog)_Paint.csprojResolveAssemblyReference.cache
+F:\STEP\DZ\EXAM_GDI+\EXAM_GDI+\My_(analog)_Paint\My_(analog)_Paint\obj\x86\Debug\My__analog__Paint.Form1.resources
+F:\STEP\DZ\EXAM_GDI+\EXAM_GDI+\My_(analog)_Paint\My_(analog)_Paint\obj\x86\Debug\My__analog__Paint.Properties.Resources.resources
+F:\STEP\DZ\EXAM_GDI+\EXAM_GDI+\My_(analog)_Paint\My_(analog)_Paint\obj\x86\Debug\My_(analog)_Paint.csproj.GenerateResource.Cache
+K:\STEP\DZ\EXAM_GDI+\EXAM_GDI+\My_(analog)_Paint\My_(analog)_Paint\obj\x86\Debug\My_(analog)_Paint.exe
+K:\STEP\DZ\EXAM_GDI+\EXAM_GDI+\My_(analog)_Paint\My_(analog)_Paint\obj\x86\Debug\My_(analog)_Paint.pdb
+K:\STEP\DZ\EXAM_GDI+\EXAM_GDI+\My_(analog)_Paint\My_(analog)_Paint\bin\Debug\My_(analog)_Paint.exe
+K:\STEP\DZ\EXAM_GDI+\EXAM_GDI+\My_(analog)_Paint\My_(analog)_Paint\bin\Debug\My_(analog)_Paint.pdb
+K:\STEP\DZ\EXAM_GDI+\EXAM_GDI+\My_(analog)_Paint\My_(analog)_Paint\obj\x86\Debug\My_(analog)_Paint.csprojResolveAssemblyReference.cache
+K:\STEP\DZ\EXAM_GDI+\EXAM_GDI+\My_(analog)_Paint\My_(analog)_Paint\obj\x86\Debug\My__analog__Paint.Form1.resources
+K:\STEP\DZ\EXAM_GDI+\EXAM_GDI+\My_(analog)_Paint\My_(analog)_Paint\obj\x86\Debug\My__analog__Paint.Properties.Resources.resources
+K:\STEP\DZ\EXAM_GDI+\EXAM_GDI+\My_(analog)_Paint\My_(analog)_Paint\obj\x86\Debug\My_(analog)_Paint.csproj.GenerateResource.Cache
+F:\ШАГ\Домашние Задания\EXAM_GDI+\My_(analog)_Paint\My_(analog)_Paint\obj\x86\Debug\My__analog__Paint.Form2.resources
+F:\ШАГ\Домашние Задания\EXAM_GDI+\My_(analog)_Paint\My_(analog)_Paint\bin\Debug\Cursor1.cur
+F:\ШАГ\Домашние Задания\EXAM_GDI+\My_(analog)_Paint\My_(analog)_Paint\bin\Debug\Resources\Cursor1.cur
+F:\ШАГ\Домашние Задания\EXAM_GDI+\My_(analog)_Paint\My_(analog)_Paint\obj\x86\Debug\My__analog__Paint.Form3.resources
+I:\EXAM_GDI+\My_(analog)_Paint\My_(analog)_Paint\obj\x86\Debug\My_(analog)_Paint.exe
+I:\EXAM_GDI+\My_(analog)_Paint\My_(analog)_Paint\obj\x86\Debug\My_(analog)_Paint.pdb
+I:\EXAM_GDI+\My_(analog)_Paint\My_(analog)_Paint\bin\Debug\Cursor1.cur
+I:\EXAM_GDI+\My_(analog)_Paint\My_(analog)_Paint\bin\Debug\Resources\Cursor1.cur
+I:\EXAM_GDI+\My_(analog)_Paint\My_(analog)_Paint\bin\Debug\My_(analog)_Paint.exe
+I:\EXAM_GDI+\My_(analog)_Paint\My_(analog)_Paint\bin\Debug\My_(analog)_Paint.pdb
+I:\EXAM_GDI+\My_(analog)_Paint\My_(analog)_Paint\obj\x86\Debug\My_(analog)_Paint.csprojResolveAssemblyReference.cache
+I:\EXAM_GDI+\My_(analog)_Paint\My_(analog)_Paint\obj\x86\Debug\My__analog__Paint.Form1.resources
+I:\EXAM_GDI+\My_(analog)_Paint\My_(analog)_Paint\obj\x86\Debug\My__analog__Paint.Form2.resources
+I:\EXAM_GDI+\My_(analog)_Paint\My_(analog)_Paint\obj\x86\Debug\My__analog__Paint.Form3.resources
+I:\EXAM_GDI+\My_(analog)_Paint\My_(analog)_Paint\obj\x86\Debug\My__analog__Paint.Properties.Resources.resources
+I:\EXAM_GDI+\My_(analog)_Paint\My_(analog)_Paint\obj\x86\Debug\My_(analog)_Paint.csproj.GenerateResource.Cache

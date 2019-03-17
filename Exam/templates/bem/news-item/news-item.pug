@@ -1,0 +1,13 @@
+mixin newsItem(newsItemData)
+	each item in newsItemData
+		.news-item
+			img.news-item_img(src= item.src, alt="")
+			.news-item_text-area
+				h1.title.title__news.title__black.title__left= item.title
+				p.news-item_text= item.text
+				.news-item_author
+					img.news-item_author-photo(src= item.authorSrc, alt="")
+					.news-item_author-data
+						h1.title__news-item.title__left.title__black= item.authorName
+						h3.news-item_date= item.date
+

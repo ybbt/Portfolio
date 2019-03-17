@@ -1,0 +1,7 @@
+mixin headingItem(headingItemData)
+	each item in headingItemData
+		.heading-item
+			img.heading-item_img(src= item.src, alt="")
+			.heading-item_text
+				.heading-item_title= item.title
+				.heading-item_subtitle= item.subtitle

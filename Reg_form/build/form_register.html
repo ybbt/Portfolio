@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="icon" type="image/png" href="favicon.png" sizes="16x16">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="form-reg">
+      <header class="header-reg">
+        <h1 class="header-reg_title">Sign up for FREE!</h1>
+      </header>
+      <main class="main-reg">
+        <form class="main-reg_form _formReg" id="reg">
+          <div class="main-reg_row-reg">
+            <div class="row-reg"><span class="row-reg_title">I am</span>
+              <div class="row-reg_icons _move">
+                <label class="row-reg_icon row-reg_icon__male _forBackMove">
+                  <input class="row-reg_icon-radio" type="radio" value="male" name="gender" checked="" form="reg"><svg x="0px" y="0px" width="17px" height="17px" viewBox="0 0 43.104 43.104" style="enable-background:new 0 0 43.104 43.104;" xml:space="preserve" class="row-reg_icon-img _forBackMove">
+<g>
+<path class="_forBackMove" d="M33.427,0.296c-1.178,0-2.133,0.956-2.133,2.134s0.955,2.134,2.133,2.134h2.393l-8.779,8.778c-2.855-2.322-6.49-3.72-10.447-3.72C7.444,9.622,0,17.065,0,26.215s7.443,16.593,16.594,16.593c9.148,0,16.592-7.443,16.592-16.593c0-3.655-1.203-7.027-3.213-9.771l8.865-8.864v1.889c0,1.178,0.955,2.134,2.133,2.134s2.133-0.956,2.133-2.134V0.297L33.427,0.296L33.427,0.296z M16.593,38.541c-6.797,0-12.326-5.529-12.326-12.326s5.529-12.326,12.326-12.326c6.795,0,12.324,5.529,12.324,12.326S23.388,38.541,16.593,38.541z"></path>
+</g>
+</svg>
+                </label>
+                <label class="row-reg_icon row-reg_icon__female _forMove">
+                  <input class="row-reg_icon-radio" type="radio" value="female" name="gender" form="reg"><svg x="0px", y="0px", width="22px", height="22px", viewBox="0 0 477.141 477.141", style="enable-background:new 0 0 477.141 477.141;", xml:space="preserve" class="row-reg_icon-img _forMove" >
+<g>
+<path class="_forMove" d="M326.711,341.99h-64.628v-64.634c0-0.686-0.142-1.323-0.213-1.997c65.409-11.119,115.378-68.161,115.378-136.681C377.249,62.208,315.044,0,238.571,0C162.103,0,99.892,62.208,99.892,138.678c0,68.521,49.973,125.562,115.375,136.681c-0.059,0.674-0.204,1.312-0.204,1.997v64.634h-64.631c-12.983,0-23.501,10.527-23.501,23.502c0,12.98,10.518,23.507,23.501,23.507h64.637v64.64c0,12.98,10.524,23.502,23.501,23.502c12.979,0,23.513-10.527,23.513-23.502v-64.64h64.628c12.986,0,23.508-10.526,23.508-23.507C350.219,352.518,339.698,341.99,326.711,341.99z M146.904,138.678c0-50.546,41.121-91.673,91.667-91.673c50.549,0,91.676,41.122,91.676,91.673s-41.127,91.667-91.676,91.667C188.031,230.346,146.904,189.224,146.904,138.678z"></path>
+</g>
+</svg>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="main-reg_row-reg">
+            <div class="row-reg">
+              <div class="row-reg_title">Year of birth</div>
+              <select class="row-reg_input _inputValid _inputYear" name="yearBirth"></select>
+              <div class="row-reg_tooltip _rowTooltip">
+                <div class="tooltip-reg"> 
+                  <div class="tooltip-reg_text _tooltipText"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main-reg_row-reg">
+            <div class="row-reg">
+              <div class="row-reg_title">Email</div>
+              <input class="row-reg_input _inputValid _inputEmail" name="email" type="email"/>
+              <div class="row-reg_tooltip _rowTooltip">
+                <div class="tooltip-reg"> 
+                  <div class="tooltip-reg_text _tooltipText"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main-reg_row-reg">
+            <div class="row-reg">
+              <div class="row-reg_title">Password</div>
+              <input class="row-reg_input _inputValid _inputPass" name="password" type="password"/>
+              <div class="row-reg_tooltip _rowTooltip">
+                <div class="tooltip-reg"> 
+                  <div class="tooltip-reg_text _tooltipText"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main-reg_row-reg">
+            <div class="row-reg">
+              <div class="row-reg_title">Postal code</div>
+              <input class="row-reg_input _inputValid _inputPostCode" name="postcode" type="text"/>
+              <div class="row-reg_tooltip _rowTooltip">
+                <div class="tooltip-reg"> 
+                  <div class="tooltip-reg_text _tooltipText"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main-reg_location-row">
+            <div class="main-reg_location"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve" class="main-reg_location-location">
+<metadata> Svg Vector Icons : http://www.onlinewebfonts.com/icon </metadata>
+<g>
+<g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)">
+<path d="M4731.2,5010.2c-1714.6-126.7-3083.6-1582.1-3095.1-3290.9c-1.9-286.1,25-476.2,111.4-781.5c234.2-841,873.6-2106.3,1812.5-3596.2c407-647,1409.3-2121.6,1440-2121.6c28.8,0,1008,1438.1,1392,2042.9C7286.8-1324,7891.6-158.5,8177.7,701.7c144,432,188.2,664.3,186.3,998.4c-5.8,1614.7-1203.9,3012.5-2807.1,3273.6C5284.2,5017.9,4996.2,5031.3,4731.2,5010.2z M5556.8,4368.9c739.2-163.2,1349.8-581.8,1760.7-1203.9c140.2-213.1,230.4-399.4,311-643.2c103.7-309.1,126.7-462.7,124.8-831.4c0-326.4-1.9-341.8-71-579.8c-213.1-745-771.9-1868.2-1593.6-3202.6C5819.9-2529.7,5019.2-3743.2,5000-3743.2c-19.2,0-819.8,1213.5-1088.7,1651.2c-827.5,1344-1386.3,2469.2-1591.7,3202.6c-238.1,844.8,46.1,1824,725.8,2499.9c414.7,412.8,921.6,675.8,1503.4,777.6C4756.2,4424.6,5357.1,4413.1,5556.8,4368.9z"/>
+<path d="M4809.9,3168.9c-777.6-105.6-1330.6-737.3-1330.6-1516.8c0-858.3,662.4-1520.7,1520.7-1520.7c858.3,0,1520.7,662.4,1520.7,1520.7c0,518.4-240,975.4-662.4,1265.3C5572.2,3113.2,5149.8,3215,4809.9,3168.9z M5270.7,2535.3c218.9-67.2,378.2-186.2,501.1-372.5c265-405.1,172.8-952.3-209.3-1244.2c-165.1-122.9-303.4-172.8-518.4-184.3c-142.1-5.8-201.6,0-307.2,30.7c-142.1,44.2-328.3,155.5-410.9,245.8c-401.3,437.8-301.4,1142.4,203.5,1440C4742.7,2575.6,5034.6,2608.3,5270.7,2535.3z"/>
+</g>
+</g>
+</svg><span class="main-reg_position">E.g. Berlin or 10432</span>
+            </div><svg  width="20px" height="20px" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve" class="main-reg_location-question _questionReg" >
+<g>
+<g transform="translate(0.000000,511.000000) scale(0.100000,-0.100000)">
+<path d="M4629.3,5007c-747-84.6-1242.3-220.8-1797.4-495.3C1368.8,3785.3,378.2,2421.3,136.8,791C91.4,491.8,87.3-247,128.5-521.4c249.7-1700.4,1246.4-3072.7,2757-3799.1c681-328.1,1326.9-470.5,2115.2-472.6c604.6,0,1019.4,66,1568.3,249.7c1558,518,2783.8,1838.7,3188.3,3433.8C9866.7-678.3,9899.7-410,9899.7,87.3c2.1,288.9-8.3,534.5-24.8,650c-84.6,565.4-241.4,1073.1-470.5,1539.5C8682.2,3733.7,7312,4730.5,5700.3,4967.8C5496,4998.7,4782,5025.6,4629.3,5007z M5403.1,4689.2c1927.4-179.5,3545.3-1558,4011.7-3417.3c107.3-431.3,134.1-656.2,134.1-1132.9c2.1-480.8-28.9-734.6-134.1-1153.5c-402.4-1603.4-1688-2889.1-3291.5-3291.5c-418.9-105.2-672.7-136.2-1153.6-134.1c-476.7,0-701.6,26.8-1132.9,134.1C2320.1-3926.4,1073.7-2743.9,607.3-1241.6C312.2-294.4,339,795.2,681.6,1717.6c579.9,1566.3,1970.7,2697.1,3617.5,2938.6C4670.5,4711.9,5042,4722.2,5403.1,4689.2z"/>
+<path d="M4472.4,2408.9c-400.3-90.8-685.1-278.6-938.9-615c-264.1-348.8-317.8-584-148.6-650c76.3-31,511.8-107.3,606.7-107.3c92.9,0,123.8,33,194,212.5c117.6,291,390,487,707.8,505.6c299.2,16.5,536.5-59.8,712-231.1c165.1-161,216.7-342.6,156.8-559.2c-47.5-173.3-132.1-268.3-470.5-522.1c-394.2-295.1-635.6-530.4-711.9-693.4c-78.4-163-136.2-402.4-150.6-612.9c-10.3-163-8.3-181.6,33-222.9c41.3-41.3,64-43.3,390-43.3c189.9,0,355,8.3,367.3,16.5c12.4,8.3,26.8,84.6,33,169.2c10.3,163,61.9,307.5,150.6,423c26.8,37.1,181.6,167.2,344.6,291c375.6,284.8,732.6,635.6,806.9,792.4c158.9,332.2,156.8,641.8-6.2,980.2c-138.3,286.8-400.4,548.9-691.3,693.4c-270.4,134.1-518,185.7-918.3,196C4697.4,2435.7,4563.2,2429.5,4472.4,2408.9z"/>
+<path d="M4495.1-1408.8c-49.5-47.5-51.6-59.8-51.6-328.1c0-161,10.3-299.2,22.7-328.1c37.1-82.5,103.2-97,412.7-97c278.6,0,291,2.1,338.4,51.6c49.5,47.5,51.6,59.9,51.6,328.1c0,161-10.3,299.2-22.7,328.1c-37.1,82.5-103.2,97-412.7,97C4555-1357.2,4542.6-1359.2,4495.1-1408.8z"/>
+</g>
+</g>
+</svg>
+            <div class="main-reg_tooltip _rowTooltip">
+              <div class="tooltip-reg tooltip-reg__question"> 
+                <div class="tooltip-reg_text _tooltipText">We don’t use postal codes to cantact members directly</div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </main>
+      <div class="submit-reg">
+        <button class="submit-reg_button _submitReg" type="submit" value="">register now!</button>
+        <div class="submit-reg_agrees">By clicking the button above you agree to our <a class="submit-reg_link" href="#">Terms of Use </a>and <a class="submit-reg_link" href="#">Privacy Policy </a>including use of cookies.</div>
+      </div>
+    </div>
+  </body>
+  <script src="js/index.js"></script>
+</html>

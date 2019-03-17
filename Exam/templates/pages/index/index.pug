@@ -1,0 +1,101 @@
+include ../../bem/header-menu/header-menu.pug
+include ../../bem/social/social.pug
+include ../../bem/heading-item/heading-item.pug
+include ../../bem/project/project.pug
+include ../../bem/news-item/news-item.pug
+
+include ../../data/data.pug
+
+
+
+
+doctype html
+html(lang='en')
+	head
+		meta(charset='UTF-8')
+		title Exam #2
+		link(rel="icon" type="image/png" href="favicon.png" sizes="16x16")
+			
+		link(rel= "stylesheet" href="css/normalize.css")
+		link(rel= "stylesheet" href="css/index-style.css")
+
+		link(rel= "stylesheet" href="libs/slick-1.8.1/slick/slick.css")
+		link(rel= "stylesheet" href="libs/slick-1.8.1/slick/slick-theme.css")
+
+		//- link(rel= "stylesheet" href="libs/bootstrap/bootstrap-grid.css")
+
+		link(href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i" rel="stylesheet")
+
+		link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous")
+
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js")
+
+		script(src="https://maps.googleapis.com/maps/api/js?callback=loadMap" async defer)
+		
+	body
+		header.header
+			.header_nav
+				img.header_logo(src="img/service_img/Logo.svg", alt="")
+
+				+headerMenu(menuItemData)
+				
+				+social(socialData)
+
+			.header_heading._headerConteiner
+				
+				+headingItem(headingItemData)
+
+			.header_scroll
+				img(src="img/service_img/arrow.png", alt="").header_scroll-img._headerScroll
+		main.main._main
+			.main_project-container
+				section.main_project._mainProject
+					.main_project-title
+						h1.title.title__section-title.title__black.title__center.tittle__project what we do
+
+					+project(projectData)
+
+			section.main_news._mainNews
+				.main_news-title
+					h1.title__section-title.title.title__white.title__center latest news
+				.main_slider._mainContainer
+
+					+newsItem(newsItemData)
+
+			section.main_gallery._mainGallery
+				.main_gallery-title
+					h1.title__section-title.title.title__center.title__black gallery
+				.main_gallery-container
+					.main_gallery-container
+						.main_main-preview
+							img(src="img/gallery_1.jpg", alt="").main_gallery-img
+						.main_preview
+							img(src="img/gallery_2_1.jpg", alt="").main_gallery-img
+							img(src="img/gallery_2_2.jpg", alt="").main_gallery-img
+							img(src="img/gallery_2_3.jpg", alt="").main_gallery-img
+							img(src="img/gallery_2_4.jpg", alt="").main_gallery-img
+				.main_gallery-button
+					button.button see more
+			section.main_contact._mainContact
+				.main_map._map
+				form.form(action="")
+		footer.footer
+			.footer_container
+				.footer_credit
+					img.footer_logo(src="img/service_img/Logo.svg", alt="")
+					.footer_copyrighting
+						.footer_copyright Copyrights © 2017 Monticello Group
+						.footer_made-with Made with  by Ga Huy
+
+				+social(socialData)
+
+
+
+
+
+		//- +header
+		//- +main
+		//- +footer
+		script(type="text/javascript" src="libs/slick-1.8.1/slick/slick.min.js")
+			
+		script(src="js/script.js")

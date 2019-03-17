@@ -1,0 +1,19 @@
+c:\users\yorik\documents\visual studio 2015\Projects\Test_bMuse\4inLine\4inLine\bin\Debug\4inLine.exe.config
+c:\users\yorik\documents\visual studio 2015\Projects\Test_bMuse\4inLine\4inLine\bin\Debug\4inLine.exe
+c:\users\yorik\documents\visual studio 2015\Projects\Test_bMuse\4inLine\4inLine\bin\Debug\4inLine.pdb
+c:\users\yorik\documents\visual studio 2015\Projects\Test_bMuse\4inLine\4inLine\obj\Debug\4inLine.csprojResolveAssemblyReference.cache
+c:\users\yorik\documents\visual studio 2015\Projects\Test_bMuse\4inLine\4inLine\obj\Debug\_4inLine.Properties.Resources.resources
+c:\users\yorik\documents\visual studio 2015\Projects\Test_bMuse\4inLine\4inLine\obj\Debug\4inLine.csproj.GenerateResource.Cache
+c:\users\yorik\documents\visual studio 2015\Projects\Test_bMuse\4inLine\4inLine\obj\Debug\4inLine.exe
+c:\users\yorik\documents\visual studio 2015\Projects\Test_bMuse\4inLine\4inLine\obj\Debug\4inLine.pdb
+C:\Users\Yorik\documents\visual studio 2015\Projects\Test_bMuse\4inLine\4inLine\obj\Debug\_4inLine.FormMain.resources
+C:\Users\Родина_Клименко\Desktop\4inLine\4inLine\bin\Debug\4inLine.exe.config
+C:\Users\Родина_Клименко\Desktop\4inLine\4inLine\bin\Debug\4inLine.exe
+C:\Users\Родина_Клименко\Desktop\4inLine\4inLine\bin\Debug\4inLine.pdb
+C:\Users\Родина_Клименко\Desktop\4inLine\4inLine\obj\Debug\4inLine.csprojResolveAssemblyReference.cache
+C:\Users\Родина_Клименко\Desktop\4inLine\4inLine\obj\Debug\_4inLine.FormMain.resources
+C:\Users\Родина_Клименко\Desktop\4inLine\4inLine\obj\Debug\_4inLine.Properties.Resources.resources
+C:\Users\Родина_Клименко\Desktop\4inLine\4inLine\obj\Debug\4inLine.csproj.GenerateResource.Cache
+C:\Users\Родина_Клименко\Desktop\4inLine\4inLine\obj\Debug\4inLine.csproj.CoreCompileInputs.cache
+C:\Users\Родина_Клименко\Desktop\4inLine\4inLine\obj\Debug\4inLine.exe
+C:\Users\Родина_Клименко\Desktop\4inLine\4inLine\obj\Debug\4inLine.pdb

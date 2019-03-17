@@ -1,0 +1,67 @@
+.title {
+	font-family: @fontFamGotBold;
+	font-size: 44px;
+	margin: 0;
+	text-transform: uppercase;
+	
+	&__section-title {
+		display:flex;
+		align-items: center;
+		flex-direction: column;
+
+		&::before {
+			content: "";
+			min-width: 100px;
+			max-width: 100px;
+			min-height: 40px;
+			text-align: center;
+			border-top: 2px solid; 
+		}
+
+		&.title__black {
+			border-color:  @colorTitle;
+		}
+	}
+
+	
+	&__black {
+		color: @colorTitle;
+	}
+
+	&__white {
+		color: white;
+
+	}
+
+	&__center {
+		text-align: center;
+	}
+
+	&__left {
+		text-align: left;
+	}
+
+	&__plaintitle {
+		font-family: @fontFamGotBook;
+		display: block;
+		font-size: 22px;
+	}
+
+	&__project {
+		margin-bottom: 170px;
+	}
+
+	&__news {
+		// font-family: @fontFamGotBold;
+		font-size: 22px;
+		line-height: 34px;
+
+
+	}
+
+	&__news-item {
+		font-family: @fontFamGotBook;
+		font-size: 18px;		
+		text-transform: uppercase;
+	}
+}
