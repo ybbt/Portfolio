@@ -1,0 +1,8 @@
+include ../../general/data/__data.pug
+
+mixin slickItem(dataObj)
+    .slick-item
+        img(src= (dataObj.folderName + "/" + dataObj.imgName), alt="").slick-item_img
+        .slick-item_content
+            .slick-item_text= dataObj.text
+            .slick-item_name= dataObj.name

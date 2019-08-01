@@ -1,0 +1,93 @@
+.main_loyout.main_loyout__clients .slick-dotted.slick-slider,
+.main_loyout .slick-list,
+.main_loyout .slick-track,
+.main_loyout .slick-item{
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.slick-track .slick-item.slick-slide {
+        display: flex;
+
+        @media (max-width: 1300px) and (orientation: portrait){
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+}
+
+.main_loyout .slick-dots{
+    bottom: 30px;
+    left:200px;
+
+    & :before {
+        font-size: 16px;
+        color: white;
+    }
+
+    & .slick-active button:before {
+        color: white;
+    }
+
+    @media (max-width: 1300px) and (orientation: landscape){
+        bottom: 2vh;
+        left: 20vw;
+    }
+
+    @media (max-width: 1300px) and (orientation: portrait){
+        bottom: 1vh;
+        left: 0;
+    }
+}
+
+.slick-item{
+    &_img{
+        width: calc(100% / 2);
+
+        @media (max-width: 1300px) and (orientation: portrait) {
+            width: 100%;
+        }
+    }
+
+    &_content{
+        margin: calc(100% / 20) 0 0 85px;
+        width: 500px;
+        color: @colorClientsText;
+
+        @media (max-width: 1300px) {
+            margin-top: 3vh;
+            margin-left: 20px;
+            margin-right: 10px;
+            width: calc(100% - 30px) ;
+        }
+    }
+
+    &_text{
+        font-family: @fontFamilyCardo;
+        font-size: 36px;
+        line-height: 42px;
+        margin-bottom: 35px;
+
+        @media (max-width: 850px) and (orientation: landscape) {
+            font-size: 2vw;
+            line-height: 2vw;
+            margin-bottom: 3vw;
+        }
+
+        @media (max-width: 780px) and (orientation: portrait) {
+            font-size: 2vh;
+            line-height: 2vh;
+            margin-bottom: 2vh;
+        }
+    }
+
+    &_name{
+        font-weight: bold;
+        font-size: 13px;
+        text-transform: uppercase;
+
+        @media (max-width: 1300px) {
+            margin-bottom: 8vh;
+        }
+    }
+}

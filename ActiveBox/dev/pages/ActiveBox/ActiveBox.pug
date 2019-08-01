@@ -1,0 +1,102 @@
+include ../../general/data/__data.pug
+include ../../bem/menu/__menu.pug
+include ../../bem/button/__button.pug
+include ../../bem/team-item/__team-item.pug
+include ../../bem/works-item/__works-item.pug
+include ../../bem/footer-item/__footer-item.pug
+include ../../bem/social/__social.pug
+include ../../bem/slick-item/__slick-item.pug
+include ../../bem/svg/__svg.pug
+
+doctype html
+html(lang='en')
+    head
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        meta(charset='UTF-8')
+        title ActiveBox
+        link(rel="icon" type="image/png" href="favicon.png" sizes="16x16")
+        link(rel="shortcut icon" type="image/x-icon" href="favicon.ico")
+
+        link(rel= "stylesheet" href="css/normalize.css")
+
+        link(rel="stylesheet" type="text/css" href="libs/slick-1.8.1/slick/slick.css")
+        link(rel="stylesheet" type="text/css" href="libs/slick-1.8.1/slick/slick-theme.css")
+
+        link(rel= "stylesheet" href="css/index.css")
+
+        link(href="https://fonts.googleapis.com/css?family=Open+Sans:700&display=swap" rel="stylesheet")
+        link(href="https://fonts.googleapis.com/css?family=Raleway:400,600,700&display=swap" rel="stylesheet")
+        link(href="https://fonts.googleapis.com/css?family=Cardo:400i&display=swap" rel="stylesheet")
+
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js")
+
+    body
+        //- block
+        header.header
+            .header_navigation
+                img(src="img/ActiveBox.png", alt="").header_logo
+                //- block
+                +menu(menuItems)
+            .header_main
+                h1.header_title Your Favorite One Page Multi Purpose Template
+                h2.header_subtitle Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit culpa, repudiandae quaerat est nemo possimus cum aliquam!
+                .header_button
+                    //- block
+                    +button("Find Out More", "btnFndOutMore")
+        //- block
+        main.main
+            section.main_loyout.main_loyout__features._features#features
+                template#templateFeatures
+                    .main_loyout-item.main_loyout-item__features
+                        //- block
+                        .features-item._root
+                            .features-item_head
+                                img(src="", alt="").features-item_img._insImg
+                                h1.features-item_title._insTitle
+                                //- доробити вставку елементу з описом
+                            .features-item_descript
+                                |Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.
+
+            section.main_loyout.main_loyout__works._works
+                - for (var i = 0; i< worksItems.length; i++)
+                    .main_loyout-item.main_loyout-item__works
+                        //- block
+                        +worksItem(worksItems[i])
+            section.main_loyout.main_loyout__team._team
+                - for (var i = 0; i< teamItems.length; i++)
+                    .main_loyout-item.main_loyout-item__team
+                        //- block
+                        +teamItem(teamItems[i])
+            section.main_loyout.main_loyout__clients._testimonials
+                ._container
+                    - for (var i = 0; i< slickItems.length; i++)
+                        +slickItem(slickItems[i])
+            section.main_loyout.main_loyout__download._download
+                h1.main_download-title Are You Ready to Start? Download Now For Free!
+                h2.main_download-subtitle Fusce dapibus, tellus ac cursus commodo
+                .main_button
+                    //- block
+                    +button("Download Here")
+        //- block
+        footer.footer
+            .footer_main
+                .footer_main-item
+                    //- block
+                    +footerItem(footerItems[0])
+                .footer_main-item.footer_main-item__center
+                    //- block
+                    .footer-item
+                        .footer-item_title share with love
+                        .footer-item_content
+                        //- block
+                        +social("footer-color")
+                .footer_main-item
+                    //- block
+                    +footerItem(footerItems[1])
+            .footer_bottom
+                p.footer_bottom-content Copyright © 2015 ActiveBox. All Rights Reserved Made with
+                    span.footer_bottom-text.footer_bottom-text__ico-red Y
+                    span.footer_bottom-text.footer_bottom-text__white by Kamal Chaneman
+        +socialSVG("display:none")
+        script(type="text/javascript" src="js/index.js")
+        script(type="text/javascript" src="libs/slick-1.8.1/slick/slick.min.js")

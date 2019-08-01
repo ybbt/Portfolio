@@ -1,0 +1,9 @@
+include ../social/__social.pug
+
+mixin teamItem(objData)
+    .team-item
+        img(src=objData.folderName + "/" +objData.imgName, alt="").team-item_img
+        h1.team-item_name= objData.name
+        h2.team-item_position= objData.position
+        .team-item_discript= objData.discript
+        +social("")

@@ -1,0 +1,171 @@
+class Events {
+
+    constructor(){
+        this.listeners = {};
+    }
+
+    on(event, fn){
+        if (!this.listeners[event]) {
+            this.listeners[event] = [];
+        }
+        this.listeners[event].push(fn);
+    }
+
+    trigger(event){
+        this.listeners[event].forEach(fn => fn());
+    }
+
+}
+
+class ApiService {
+    static callApi(url, method) {
+
+        const options = {
+            method,
+        };
+
+        return fetch(url, options)
+            .then(response =>
+                response.ok ? response.json() : Promise.reject(Error('Failed to load'))
+            )
+            .catch(error => {
+                throw error;
+            });
+    }
+}
+
+class CollectionService {
+
+    constructor(){
+        API_URL = 'https://jsonplaceholder.typicode.com/photos';
+    }
+
+    async getCollection() {
+
+        try {
+            return await ApiService.callApi(this.API_URL, 'GET');
+
+        } catch (error) {
+            throw error;
+        }
+    }
+}
+
+class Collection extends Events {
+
+    constructor(){
+        super();
+        this.list = [
+            {
+            "title": "Easily Customised",
+            "thumbnailUrl": "img/Layer 48.webp"
+            },
+            {
+            "title": "Easily Customised",
+            "thumbnailUrl": "img/Layer 48.webp"
+            },
+            {
+            "title": "Easily Customised",
+            "thumbnailUrl": "img/Layer 48.webp"
+            },
+            {
+            "title": "Easily Customised",
+            "thumbnailUrl": "img/Layer 48.webp"
+            },
+            {
+            "title": "Easily Customised",
+            "thumbnailUrl": "img/Layer 48.webp"
+            },
+            {
+            "title": "Easily Customised",
+            "thumbnailUrl": "img/Layer 48.webp"
+            },
+        ];
+    }
+
+    add(list) {
+        this.list = list;
+        this.trigger('change');
+    }
+
+
+    get list(){
+        return this.list.slice();
+    }
+}
+
+class Features {
+
+    
+
+    constructor() {
+    this.templateFeatures = document.querySelector('#templateFeatures').content;
+
+    this.model = new Collection();
+
+    // root element of template
+    this.root = null
+
+        this._eventsAssign()
+            ._render();
+    }
+
+    _eventsAssign() {
+
+        document.querySelector('#btnFndOutMore').addEventListener('click', this.addItems.bind(this));
+
+        this.model.on('change', this._render.bind(this));
+        return this;
+    }
+
+    _render() {
+        document.querySelector('#features').innerHTML = '';
+
+        this.model.list.forEach((el, i) => {
+            const template = Features.templateFeatures.cloneNode(true);
+            template.querySelector('._insImg').src = el["thumbnailUrl"];
+            template.querySelector('._insTitle').innerHTML = el["title"];
+            document.querySelector('#features').appendChild(template);
+        });
+    }
+
+    async addItems(){
+
+        const collectionService  = new CollectionService();
+
+        const tmpList =  await collectionService.getCollection();
+
+        const listRandom = [];
+        for (let index = 0; index < this.model.list.length; index++) {
+            listRandom.push(tmpList[Math.floor(Math.random() * tmpList.length)]);
+        }
+
+        this.model.add(listRandom);
+
+    }
+
+}
+
+new Features();
+
+$(document).ready(function(){
+    $('._container').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        adaptiveHeight: true,
+        arrows : false,
+        fade: true,
+    });
+	
+	$('._menuScroll').on('click', function (e) {
+        
+        e.preventDefault();
+        $('html').animate({
+    
+            scrollTop:  $($(this).attr('data-dest')).offset().top,
+        }, 1500);
+        console.log($($(this).attr('data-dest')).offset().top);
+    });
+});
